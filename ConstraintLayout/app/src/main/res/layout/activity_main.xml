@@ -7,33 +7,31 @@
 	tools:context=".MainActivity">
 
 	<androidx.constraintlayout.widget.Guideline
-		android:id="@+id/guideline"
+		android:id="@+id/guideline2"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
-		android:orientation="vertical"
-		app:layout_constraintGuide_percent="0.5" />
+		android:orientation="horizontal"
+		app:layout_constraintGuide_percent="0.50615597" />
 
 	<View
 		android:id="@+id/view"
 		android:layout_width="0dp"
 		android:layout_height="0dp"
-		android:background="#4CAF50"
-		app:layout_constraintBottom_toBottomOf="parent"
-		app:layout_constraintEnd_toStartOf="@+id/guideline"
-		app:layout_constraintHorizontal_bias="0.0"
+		android:background="#FFEB3B"
+		app:layout_constraintBottom_toTopOf="@+id/guideline2"
+		app:layout_constraintEnd_toEndOf="parent"
 		app:layout_constraintStart_toStartOf="parent"
-		app:layout_constraintTop_toTopOf="parent"
-		app:layout_constraintVertical_bias="0.0" />
+		app:layout_constraintTop_toTopOf="parent" />
 
 	<View
 		android:id="@+id/view2"
 		android:layout_width="0dp"
 		android:layout_height="0dp"
-		android:background="#009688"
+		android:background="#8BC34A"
 		app:layout_constraintBottom_toBottomOf="parent"
 		app:layout_constraintEnd_toEndOf="parent"
-		app:layout_constraintStart_toEndOf="@+id/view"
-		app:layout_constraintTop_toTopOf="parent" />
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@id/guideline2" />
 
 	<Button
 		android:id="@+id/button"
