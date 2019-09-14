@@ -6,13 +6,67 @@
 	android:layout_height="match_parent"
 	tools:context=".MainActivity">
 
-	<TextView
+	<androidx.constraintlayout.widget.Guideline
+		android:id="@+id/guideline"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
-		android:text="Hello World!"
+		android:orientation="vertical"
+		app:layout_constraintGuide_percent="0.5" />
+
+	<View
+		android:id="@+id/view"
+		android:layout_width="0dp"
+		android:layout_height="0dp"
+		android:background="#4CAF50"
 		app:layout_constraintBottom_toBottomOf="parent"
-		app:layout_constraintLeft_toLeftOf="parent"
-		app:layout_constraintRight_toRightOf="parent"
+		app:layout_constraintEnd_toStartOf="@+id/guideline"
+		app:layout_constraintHorizontal_bias="0.0"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintVertical_bias="0.0" />
+
+	<View
+		android:id="@+id/view2"
+		android:layout_width="0dp"
+		android:layout_height="0dp"
+		android:background="#009688"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toEndOf="@+id/view"
 		app:layout_constraintTop_toTopOf="parent" />
+
+	<Button
+		android:id="@+id/button"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:text="Button TOP"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent" />
+
+	<Button
+		android:id="@+id/button2"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:text="Button BOTTOM"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent" />
+
+	<Button
+		android:id="@+id/button3"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="LEFT BELOW TOP"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/button" />
+
+	<Button
+		android:id="@+id/button4"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="RIGHT ABOVE BOTTOM"
+		app:layout_constraintBottom_toTopOf="@+id/button2"
+		app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
