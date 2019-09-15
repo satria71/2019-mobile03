@@ -58,6 +58,7 @@
 		android:layout_height="wrap_content"
 		android:layout_marginBottom="72dp"
 		android:fontFamily="@font/montserrat_light"
+		android:onClick="clickLogin"
 		android:text="Login"
 		android:textColor="#FFFFFF"
 		android:textSize="18sp"
