@@ -1,10 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-	xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
 	xmlns:app="http://schemas.android.com/apk/res-auto"
 	xmlns:tools="http://schemas.android.com/tools"
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
+	android:background="#FFFFFF"
 	tools:context=".WelcomeActivity">
 
+	<ImageView
+		android:id="@+id/calendar"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="30dp"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		app:srcCompat="@drawable/ic_eventlist" />
+
+	<TextView
+		android:id="@+id/welcome_text"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="8dp"
+		android:fontFamily="@font/montserrat_semi_bold"
+		android:text="Welcome To dobols"
+		android:textColor="#313131"
+		android:textSize="24sp"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/calendar" />
+
+	<TextView
+		android:id="@+id/sub_welcome"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:fontFamily="@font/montserrat_light"
+		android:text="Make your days more beautiful with us"
+		android:textColor="#313131"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/welcome_text" />
+
+	<ImageView
+		android:id="@+id/background_satu"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:scaleType="fitXY"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.0"
+		app:layout_constraintStart_toStartOf="parent"
+		app:srcCompat="@drawable/bg_red" />
+
+	<TextView
+		android:id="@+id/login_text"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="72dp"
+		android:fontFamily="@font/montserrat_light"
+		android:text="Login"
+		android:textColor="#FFFFFF"
+		android:textSize="18sp"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
